@@ -1,0 +1,47 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SolaimanLipi", Arial, sans-serif;
+  background: radial-gradient(circle, #fff4c1, #ffe5b4, #ffd1dc);
+}
+
+#heaven-box {
+  text-align: center;
+}
+
+#message {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ffebcd;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background: #f4a460;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: #d2691e;
+}
+
+@keyframes pulse {
+  0% { background: radial-gradient(circle, #fff4c1, #ffe5b4); }
+  50% { background: radial-gradient(circle, #ffe5b4, #ffd1dc); }
+  100% { background: radial-gradient(circle, #ffd1dc, #fff4c1); }
+}
+
+body {
+  animation: pulse 5s infinite;
+}
